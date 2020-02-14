@@ -1,0 +1,19 @@
+{
+  "name": "webpacksetpu",
+  "version": "1.0.0",
+  "description": "webpack setup from udemy course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack",
+    "4",
+    "bundler",
+    "scss",
+    "css",
+    "es6"
+  ],
+  "author": "Prabhakar Acharya",
+  "license": "MIT"
+}
