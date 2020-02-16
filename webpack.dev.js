@@ -10,7 +10,7 @@ module.exports = merge(Config, {
     devtool: 'none',
     output:{
         //contenthas gives unique id to the file which prevents caching. 
-        filename: "bundle.js",
+        filename: "[name].bundle.js",
         path: path.resolve(__dirname, 'dist'),
         //publicPath: 'dist/'
     },

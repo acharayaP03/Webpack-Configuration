@@ -11,7 +11,7 @@ module.exports = merge(Config, {
     mode: 'production',
     output:{
         //contenthas gives unique id to the file which prevents caching. 
-        filename: "bundle.[contenthash].js",
+        filename: "[name].[contenthash].bundle.js",
         path: path.resolve(__dirname, 'dist'),
         /*publicPath: 'dist/'*/
     },
