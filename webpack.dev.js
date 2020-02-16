@@ -15,4 +15,16 @@ module.exports = merge(Config, {
         //publicPath: 'dist/'
     },
     //all common modules and rules are in .config.js file.
+    module: {
+        rules: [
+             {
+                test: /\.scss$/,
+                use: [
+                    'style-loader',// inhjects css into the dom
+                    'css-loader', 
+                    'sass-loader'
+                ]
+            }
+        ]
+    }
 })
