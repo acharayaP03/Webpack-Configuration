@@ -2,22 +2,13 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
-    devtool: 'none',
     entry: './src/index.js',
-    output:{
-        //contenthas gives unique id to the file which prevents caching. 
-        filename: "bundle.[contenthash].js",
-        path: path.resolve(__dirname, 'dist'),
-       
-    },
-    //generates new html template.
     plugins: [
         new HtmlWebpackPlugin({
             //use this file as from src
             template: "./src/template.html"
         })
-    ],
+     ],
     module:{
         rules: [
             {
