@@ -4,13 +4,27 @@
 $primary : #ff9900;
 
 body{
-    background-color: burlywood;
+    background-color: #e3e3e3;
 }
 
 .btn{
     &-primary{
+        text-transform: uppercase;
+        color: #464646;
         background: $primary;
         border: 1px solid $primary;
         border-radius: 0;
+        transition: .3s background ease-in;
     }
+    &:hover{
+        color: #464646;
+        background:lighten($primary, 15%);
+        border: $primary;
+    }
+}
+
+input[type="text"]{
+    border: 0;
+    border-bottom: 1px solid #464646;
+    border-radius: 0;
 }

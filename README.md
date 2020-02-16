@@ -14,4 +14,6 @@ Install all Dependencies
  
  -- [Set mode to 'development' and devtool to none so that we can see how our code is added to the bundle ]
  
+ -- [ Here we have split the config.js file into three seperate .dev.js and .prod.js where rules will be shared from .config.js, webpack-merge will allow us to merge both of these to config.js. -> npm instal --save-dev webpack-merge]
+ 
  
