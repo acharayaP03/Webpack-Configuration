@@ -16,7 +16,8 @@ body{
         border-radius: 0;
         transition: .3s background ease-in;
     }
-    &:hover{
+    &:hover,
+    &:active{
         color: #464646;
         background:lighten($primary, 15%);
         border: $primary;

@@ -17,3 +17,14 @@ Install all Dependencies
  -- [ Here we have split the config.js file into three seperate .dev.js and .prod.js where rules will be shared from .config.js, webpack-merge will allow us to merge both of these to config.js. -> npm instal --save-dev webpack-merge]
  
  
+# Add html-loader, file-loader, and clean-webpack-plugin
+
+- Added html-loader to automatically require the files we reference in img tags
+
+- Added file-loader to handle the svg,png,jpg,gif files from our images
+
+- Configured file-loader to add our images to an imgs directory in dist
+
+- Also configured it to add a hash to their filenames
+
+- Lastly, added clean-webpack-plugin to our production config to clean out the dist directory each time we build

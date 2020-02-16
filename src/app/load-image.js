@@ -1,4 +1,4 @@
-import url from './webpack.png'
+import url from '../assets/image/webpack.png'
 
 export const addImage = function() {
     const image = document.createElement('img');
